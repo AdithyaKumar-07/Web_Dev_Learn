@@ -187,6 +187,50 @@
       <dd>- white cold drink</dd>
     </dl>
 
-   
+<!-- Forms -->
+    <h4>Fill The Form to join my Team.</h4>
+    <form action="post">
+      <!-- label to mention attribute name to user -->
+      <!-- input tag to take input from user -->
+        <!-- Input tag can have attributes like type, id, name, value, placeholder, required, autofocus, etc..,-->
+        <!-- type attribute can have values like text, password, radio, checkbox, etc.., -->
+        <!-- id attribute is used to link the label with input tag -->
+        <!-- name attribute is used to identify the input tag -->
+        <!-- value attribute is used to set the default value of the input tag -->
+        <!-- placeholder attribute is used to show the hint to the user -->
+        <!-- required attribute is used to make the input tag mandatory -->
+        <!-- autofocus attribute is used to focus the input tag when the page loads -->
+      <!-- TextArea tag is used for comments from user-->
+      <!-- Select tag is used for dropdowns -->
+        <!-- Option tag is used to add options to the select tag -->
+        
+      <div>
+        <label for="username">Enter Your Username:</label>
+        <input type="text" id="username" name="username" placeholder="Eg: someone123" required autofocus>
+      </div>
+      <div>
+          <input type="radio" id="male" name="gender" value="male"> 
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female"> 
+          <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="checkbox" id="terms" name="terms" value="agree">
+        <label for="terms">I agree to the terms and conditions.</label>
+      </div>
+      <div>
+        <label for="message">Message Box:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here...">Hello Adithya</textarea>
+      </div>
+      <div>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+    </form>
 </body>
 </html>
