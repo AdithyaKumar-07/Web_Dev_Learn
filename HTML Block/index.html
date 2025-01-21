@@ -1,244 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics of HTML</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basics of HTML</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Heading Tags -->
-    <h1>Basics of HTML</h1>
-    <h1>This is the top level of heading tag.</h1>
-    <h6>This is the last level of Heading tag.</h6>
+  <h1>Basics of HTML</h1>
+  <h1>This is the top level of heading tag.</h1>
+  <h6>This is the last level of Heading tag.</h6>
 
-<!-- Paragraph Tags -->
-    <p>This is a Paragraph Tag and Below one with lorem ipsum...</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, hic sunquibusdanostrquo vero ea aliquam voluptates corrupti.
-    </p>
+  <!-- Paragraph Tags -->
+  <p>This is a Paragraph Tag and Below one with lorem ipsum...</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, hic sunquibusdanostrquo vero ea aliquam
+    voluptates corrupti.
+  </p>
 
-<!-- Line Break Tag -->
-    <br>
+  <!-- Line Break Tag -->
+  <br>
 
-<!-- Anchor Tag -->
-    <a target = "_blank" href="//www.google.com">This is a link to Google. </a>
-    <br>
+  <!-- Anchor Tag -->
+  <!-- Attributes:-->
+  <!-- href: It is the hyperlink reference -->
+  <!-- target: It is used to open the link in a new tab or same tab -->
+  <!-- title: It is the title of the link -->
+  <!-- rel: It is the relationship between the current document and the linked document -->
+  <!-- download: It is used to download the file -->
+  <!-- hreflang: It is the language of the linked document -->
+  <!-- type: It is the media type of the linked document -->
+  <!-- name: It is the name of the anchor -->
+  <!-- id: It is the id of the anchor -->
+  <!-- class: It is the class of the anchor -->
+  <a target="_blank" href="//www.google.com">This is a link to Google. </a>
+  <br>
 
-<!-- Image Tag -->
-    <img src="Tomb_Raider Screenshot.png" alt="Tomb Raider Image" width="500">
-    <br>
+  <!-- Image Tag -->
+  <!-- Attributes:-->
+  <!-- src: It is the source of the image -->
+  <!-- alt: It is the alternative text for the image -->
+  <!-- width and height-->
+  <img src="Tomb_Raider Screenshot.png" alt="Tomb Raider Image" width="500">
+  <br>
 
-<!-- Video Tag -->
-    <video width="320" height="240" controls>
-        <source src="Project SWITCH Output Blender.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <br>
+  <!-- Video Tag -->
+  <!-- Attributes:-->
+  <!-- controls: It shows the controls like play, pause, volume, etc.., --> 
+  <!-- autoplay: It plays the video automatically when the page loads -->
+  <!-- loop: It plays the video in a loop -->
+  <!-- muted: It mutes the video -->
+  <!-- poster: It shows the image before the video starts -->
+  <!-- preload: It loads the video before playing -->
+  <!-- src: It is the source of the video -->
+  <!-- type: It is the type of the video -->
+  <!-- width and height-->
+  <!-- Video can be in formats like mp4, webm, ogg, etc.., -->
+  <video width="320" height="240" controls muted poster="Tomb_Raider Screenshot.png">
+    <source src="Project SWITCH Output Blender.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
 
-<!-- Tables -->
-    <table style="width: 100%"; border="1px slolid black">
-        <caption>Data</caption>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>Doe</td>
-            <td>25</td>
-        </tr>
-    </table>
-
-
-    <table>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-
-
-      <table>
-        <tr>
-          <th>Firstname</th>
-          <td>Jill</td>
-          <td>Eve</td>
-        </tr>
-        <tr>
-          <th>Lastname</th>
-          <td>Smith</td>
-          <td>Jackson</td>
-        </tr>
-        <tr>
-          <th>Age</th>
-          <td>94</td>
-          <td>50</td>
-        </tr>
-      </table>
+  <!-- Audio Tag -->
+  <!-- <audio src="link" controls autoplay loop muted preload="none/meta/auto"></audio> -->
+  
+  <!-- Tables -->
+  <table style="width: 100%" border="1px solid black">
+    <caption>Data</caption>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>25</td>
+    </tr>
+  </table>
 
 
-      <table>
-        <tr>
-          <th colspan="2">Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
 
 
-      <table>
-        <tr>
-          <th colspan="2">Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>43</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>57</td>
-        </tr>
-      </table>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <td>Jill</td>
+      <td>Eve</td>
+    </tr>
+    <tr>
+      <th>Lastname</th>
+      <td>Smith</td>
+      <td>Jackson</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>94</td>
+      <td>50</td>
+    </tr>
+  </table>
 
 
-      <table>
-        <tr>
-          <th>Name</th>
-          <td>Jill</td>
-        </tr>
-        <tr>
-          <th rowspan="2">Phone</th>
-          <td>555-1234</td>
-        </tr>
-        <tr>
-          <td>555-8745</td>
-      </tr>
-      </table>
+  <table>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
 
-<!-- Lists -->
+
+  <table>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>57</td>
+    </tr>
+  </table>
+
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>Jill</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>555-1234</td>
+    </tr>
+    <tr>
+      <td>555-8745</td>
+    </tr>
+  </table>
+
+  <!-- Lists -->
   <!-- Unordered Lists -->
-    <ul style="list-style-type: square">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+  <ul style="list-style-type: square">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
   <!-- Ordered Lists -->
-    <ol type="i">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
+  <ol type="i">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
 
-    <ol start="50">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
+  <ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
 
-    <ol reversed type="A">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
+  <ol reversed type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
 
-    <ol>
-      <li>Coffee</li>
-      <li>Tea
-        <ol>
-          <li>Black tea</li>
-          <li>Green tea</li>
-        </ol>
-      </li>
-      <li>Milk</li>
-    </ol>
+  <ol>
+    <li>Coffee</li>
+    <li>Tea
+      <ol>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ol>
+    </li>
+    <li>Milk</li>
+  </ol>
   <!-- Description Lists -->
-    <dl>
-      <dt>Coffee</dt>
-      <dd>- black hot drink</dd>
-      <dt>Milk</dt>
-      <dd>- white cold drink</dd>
-    </dl>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
 
-<!-- Forms -->
-    <h4>Fill The Form to join my Team.</h4>
+  <!-- Forms -->
+  <h4>Fill The Form to join my Team.</h4>
+  <form action="post">
+    <!-- label to mention attribute name to user -->
+    <!-- input tag to take input from user -->
+    <!-- Input tag can have attributes like type, id, name, value, placeholder, required, autofocus, etc..,-->
+    <!-- type attribute can have values like text, password, radio, checkbox, etc.., -->
+    <!-- id attribute is used to link the label with input tag -->
+    <!-- name attribute is used to identify the input tag -->
+    <!-- value attribute is used to set the default value of the input tag -->
+    <!-- placeholder attribute is used to show the hint to the user -->
+    <!-- required attribute is used to make the input tag mandatory -->
+    <!-- autofocus attribute is used to focus the input tag when the page loads -->
+    <!-- TextArea tag is used for comments from user-->
+    <!-- Select tag is used for dropdowns -->
+    <!-- Option tag is used to add options to the select tag -->
+
+    <div>
+      <label for="username">Enter Your Username:</label>
+      <input type="text" id="username" name="username" placeholder="Eg: someone123" required autofocus>
+    </div>
+    <div>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <input type="checkbox" id="terms" name="terms" value="agree">
+      <label for="terms">I agree to the terms and conditions.</label>
+    </div>
+    <div>
+      <label for="message">Message Box:</label>
+      <br>
+      <textarea name="message" id="message" cols="30" rows="10"
+        placeholder="Enter your message here...">Hello Adithya</textarea>
+    </div>
+    <div>
+      <select name="cars" id="cars">
+        <option value="rr">Rolls Royce</option>
+        <option value="bentley">Bentley</option>
+        <option value="jaguar">Jaguar</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="bmw">BMW</option>
+      </select>
+    </div>
+  </form>
+
+  <!-- Inline and Block Elements -->
+  <!-- Inline Elements takes necessary width on the screen -->
+  <!-- Block Elements takes full width on the screen -->
+  <!-- These are also called as display properties as they can also be set using CSS-->
+  <p>This is a Paragraph.</p> <!-- Block Element -->
+  <a href="https://google.com">Google</a> <!-- Inline Element -->
+  <div>
+    I am a Div.
+    I am a Block Element.
+  </div>
+  <span>
+    I am a Span.
+    I am an Inline Element.
+  </span>
+  <a href="">He is Inline again.[Link]</a>
+
+  <div>
     <form action="post">
-      <!-- label to mention attribute name to user -->
-      <!-- input tag to take input from user -->
-        <!-- Input tag can have attributes like type, id, name, value, placeholder, required, autofocus, etc..,-->
-        <!-- type attribute can have values like text, password, radio, checkbox, etc.., -->
-        <!-- id attribute is used to link the label with input tag -->
-        <!-- name attribute is used to identify the input tag -->
-        <!-- value attribute is used to set the default value of the input tag -->
-        <!-- placeholder attribute is used to show the hint to the user -->
-        <!-- required attribute is used to make the input tag mandatory -->
-        <!-- autofocus attribute is used to focus the input tag when the page loads -->
-      <!-- TextArea tag is used for comments from user-->
-      <!-- Select tag is used for dropdowns -->
-        <!-- Option tag is used to add options to the select tag -->
-        
       <div>
-        <label for="username">Enter Your Username:</label>
-        <input type="text" id="username" name="username" placeholder="Eg: someone123" required autofocus>
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="username" name="username" placeholder="Name here" required autofocus>
       </div>
       <div>
-          <input type="radio" id="male" name="gender" value="male"> 
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female"> 
-          <label for="female">Female</label>
-      </div>
-      <div>
-        <input type="checkbox" id="terms" name="terms" value="agree">
-        <label for="terms">I agree to the terms and conditions.</label>
-      </div>
-      <div>
-        <label for="message">Message Box:</label>
-        <br>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here...">Hello Adithya</textarea>
-      </div>
-      <div>
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
+        <label for="city">Enter Your City:</label>
+        <select name="city" id="city">
+          <option value="hyd">Hyderabad</option>
+          <option value="bang">Bangalore</option>
+          <option value="chennai">Chennai</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="delhi">Delhi</option>
+          <option value="pune">Vijayawada</option>
+          <option value="pune">Ongole</option>
+          <option value="pune">Chirala</option>
+          <option value="pune">Nellore</option>
         </select>
       </div>
+      <div>
+        <label for="pincode">Pincode:</label>
+        <input type="number" id="pincode" name="pincode" placeholder="Pincode here" required>
+      </div>
     </form>
+  </div>
 
-<!-- Inline and Block Elements -->
- <!-- Inline Elements takes necessary width on the screen -->
- <!-- Block Elements takes full width on the screen -->
- <!-- These are also called as display properties as they can also be set using CSS-->
-    
-    
+  <!-- Id & Classes -->
+  <!-- Id uniquely identifies an element, while Class groups elements for styling -->
+  <!-- Id is unique per page, whereas Class can be reused multiple times -->
+  <!-- Id has priority over class -->
+
+  <div id="one" class="First Class1">CLASS-First and Class1 & id-one.</div>
+  <div id="two" class="First Class1">CLASS-First and Class1 & id-two.</div>
+  <div id="one" class="Second Class1">CLASS-Second and Class1 & id-one.</div>
+  <div id="two" class="Second Class2">CLASS-Second and Class2 & id-two.</div>
+  <div id="one" class="Second Class2">CLASS-Second and Class2 & id-one.</div>
+
+  <!-- My Observation:
+   1.)We Have to manually use ID only once...It is not an error...
+   2.)Priority between two classes depends on latest one written in CSS page or HTML page
+  -->
+  
+  <!-- SVG Files and iFrames -->
+  <svg height="100" width="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2.5" fill="purple" />
+  </svg>
+
+  <img src="image.svg" alt="Circle Image">  <!-- add: xmlns="http://www.w3.org/2000/svg", in svg file beside svg to show this image -->
+
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wJVq_6DkavM?si=WjTFe_HECULTYMym&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 </body>
+
 </html>
