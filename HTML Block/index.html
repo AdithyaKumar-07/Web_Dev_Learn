@@ -68,6 +68,15 @@
   <!-- <audio src="link" controls autoplay loop muted preload="none/meta/auto"></audio> -->
   
   <!-- Tables -->
+  <!-- Attributes: -->
+  <!-- border: It specifies the border width of the table -->
+  <!-- style: It specifies the inline CSS for the table -->
+  <!-- caption: It provides a title or explanation for the table -->
+  <!-- tr: It defines a row in the table -->
+  <!-- th: It defines a header cell in the table -->
+  <!-- td: It defines a standard cell in the table -->
+  <!-- colspan: It specifies the number of columns a cell should span -->
+  <!-- rowspan: It specifies the number of rows a cell should span -->
   <table style="width: 100%" border="1px solid black">
     <caption>Data</caption>
     <tr>
@@ -87,27 +96,7 @@
     </tr>
   </table>
 
-
-  <table>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
-
-
-  <table>
+  <table style="width: 100%" border="1px solid black">
     <tr>
       <th>Firstname</th>
       <td>Jill</td>
@@ -126,7 +115,7 @@
   </table>
 
 
-  <table>
+  <table style="width: 100%" border="1px solid black">
     <tr>
       <th colspan="2">Name</th>
       <th>Age</th>
@@ -144,25 +133,7 @@
   </table>
 
 
-  <table>
-    <tr>
-      <th colspan="2">Name</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>43</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>57</td>
-    </tr>
-  </table>
-
-
-  <table>
+  <table style="width: 100%" border="1px solid black">
     <tr>
       <th>Name</th>
       <td>Jill</td>
@@ -177,13 +148,21 @@
   </table>
 
   <!-- Lists -->
+  
   <!-- Unordered Lists -->
+  <!-- Attributes: -->
+  <!-- type: It specifies the type of the list item marker (disc, circle, square, none) -->
   <ul style="list-style-type: square">
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3</li>
   </ul>
+
   <!-- Ordered Lists -->
+  <!-- Attributes: -->
+  <!-- type: It specifies the type of the list item marker (1, A, a, I, i) -->
+  <!-- start: It specifies the start value of the list item -->
+  <!-- reversed: It specifies that the list order should be descending -->
   <ol type="i">
     <li>Item 1</li>
     <li>Item 2</li>
@@ -212,6 +191,7 @@
     </li>
     <li>Milk</li>
   </ol>
+
   <!-- Description Lists -->
   <dl>
     <dt>Coffee</dt>
@@ -317,7 +297,6 @@
   <!-- Id & Classes -->
   <!-- Id uniquely identifies an element, while Class groups elements for styling -->
   <!-- Id is unique per page, whereas Class can be reused multiple times -->
-  <!-- Id has priority over class -->
 
   <div id="one" class="First Class1">CLASS-First and Class1 & id-one.</div>
   <div id="two" class="First Class1">CLASS-First and Class1 & id-two.</div>
@@ -327,7 +306,8 @@
 
   <!-- My Observation:
    1.)We Have to manually use ID only once...It is not an error...
-   2.)Priority between two classes depends on latest one written in CSS page or HTML page
+   2.)Priority between two classes depends on latest one written in CSS page or HTML page...
+   3.)Id has priority over class
   -->
   
   <!-- SVG Files and iFrames -->
@@ -340,6 +320,119 @@
   <div>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wJVq_6DkavM?si=WjTFe_HECULTYMym&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+
+  <!-- Semantic Tags.-->
+  <!-- Semantic Tags are used to get good website's SEO[Search Engine Optimization] and increases maintainability of the code.-->
+  <!-- Non-Semantic Tags: div, span-->
+  <!-- Semantic Tags: header, nav, main, article, figure, section, aside, footer-->
+  <br><br><br><br>
+  <header>
+    <h1>New Page</h1>
+    <nav>
+      <ul id="navbar">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Contact</li>
+      </ul>
+    </nav>
+    <!-- If we use display: flex in style it will be arranged horizontally-->
+  </header>
+  <main>
+    <h1>Adithya's Portfolio</h1>
+  </main>
+  <footer>
+    Copyright AK | "All Rights Reserved" 
+  </footer>
+  <!--My Observation:
+  Semantics are not used to style the page.They are used to make styling easier.We can to styling even without Semantic Tags but, That will effect website SEO which is not a good practice. -->
+
+
+  <!-- Entities -->
+  <!-- Things like <p> <h1> etc., cannot be printed in Website (even extra whitespaces also) are they are detected as tags instead of text. so entities are used -->
+  <!-- To Print those we use entities. To Print Whitespaces we can also use pre tag-->
+  <pre>
+    Using Pre Tag     to get spaces      exactly how i need.
+  </pre>
+  <!-- Important Entities to remember:-->
+  <!-- < -- &lt; -->
+  <!-- > -- &gt; -->
+  <!-- & -- &amp; -->
+  <!-- spaces -- &nbsp; -->
+  <!-- copyright symbol -- &copy; -->
+  <!-- registered symbol -- &reg; -->
+  <!-- trademark symbol -- &trade; -->
+  <!-- Indian Rupee -- &#8377 -->
+  <!-- cent -- &cent; -->
+  <!-- euro -- &euro; -->
+  <!-- pound -- &pound; -->
+  <!-- yen -- &yen; -->
+  <!-- There are many symbols like this... There is no need to remember all those as we can directly get them from online and add. -->
+  <p> Symbols: 
+    &lt;
+    &gt;
+    &amp;
+    &copy;
+    &reg;
+    &trade;
+    &nbsp; &nbsp; &nbsp;
+    &#8377;
+    &cent;
+    &euro;
+    &pound;
+    &yen;
+  </p>
+
+  <!-- code, q, blockquote, abbr, address, bdo -->
+  
+  <!-- blockquote for quotations cited from other sources -->
+  <blockquote cite="www.geeksforgeeks.org">
+    GeeksforGeeks:A computer science portal for geeks
+  </blockquote>
+
+  <!-- q for short quotations -->
+  <q>
+    My curiosity drives me, my words connect me, and every challenge adds to my evolution.
+  </q>
+
+  <div>
+    <!-- Using Pre tag to show indentation of code before code tag. -->
+    <!-- code tag to define code in website. -->
+    <pre><code>
+      &lt;!-- This is an example of a code block --&gt;
+      &lt;div&gt;
+        &lt;p&gt;Hello, World!&lt;/p&gt;
+      &lt;/div&gt;
+    </code></pre>
+  </div>
+
+  <!-- abbr -- Hover over that element to see abbrevation. -->
+  <p>The <abbr title="World Health Organization">WHO</abbr> was found in 1948.</p>
+
+  <!-- bdo -- To print text in bidirectional-->
+  <bdo dir="rtl">This text will be written from right to left</bdo>
+
+  <!-- address -- To Mention Address. -->
+  <address>
+    Written by Adithya Kumar.<br>
+    Visit us at:<br>
+    Adithya.com{Not Created Yet} &#128517<br>
+    Room 818, MH4, VIT-AP<br>
+    Amaravathi, Andhra Pradesh [522503]
+  </address>
+
+  <!-- Other Obsolete Tags: Not required to remember but better to learn. -->
+  <!-- font, centre, u-->
+  <centre><u> The End </u></centre>
+  <font color="red" size="3" face="verdana">This is font.</font>
+  <div style="text-align: center;">The End</div>
+  <!-- Now we have alternatives -->
+  <!-- My Observation: Centre Tag, Font tag are no more having any effect in HTML5 -->
+  <div id = "end" style="text-align: center;">
+    We Reached a Milestone.
+    Not the End. Just a start for the new beginning [CSS]
+  </div>
+  <!-- We Reached a Milestone.-->
+  <!-- Not the End. Just a start for the new beginning [CSS]-->
 </body>
 
 </html>

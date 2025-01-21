@@ -16,7 +16,8 @@ span {
 
 
 /* ID and CLASSES */
-
+/* ID ---> #
+Classes ---> . */
 .Second{
     background-color: rgb(255, 136, 0);
 }
@@ -29,4 +30,19 @@ span {
 
 #one {
     background-color: rgb(184, 141, 225);
+}
+
+/* #navbar {
+    display:flex;
+} */
+
+
+/* This is Made with CSS...Let's Learn in the next Block */
+#end {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 18px;
+    color: darkblue;
 }
