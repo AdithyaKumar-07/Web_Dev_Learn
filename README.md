@@ -9,7 +9,7 @@ Welcome to my Web Development Learning Repository. This is a place where I will 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
+- [Technologies Learnt](#technologies-learnt)
 - [Projects](#projects)
 - [Learning Resources](#learning-resources)
 - [Future Plans](#future-plans)
@@ -32,6 +32,9 @@ None till now..
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [W3Schools](https://www.w3schools.com/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
+
+## Future Plans
+- To Make a Responsive Portfolio Website
 
 ## Contributing
 
